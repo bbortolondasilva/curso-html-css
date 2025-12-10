@@ -1,0 +1,31 @@
+HTML
+
+
+O HTML é uma linguagem de marcação, ela apresenta conteúdo. Ela utiliza de marcas, as 'tags' para formatar o conteúdo inserido dentro delas. ex: <>conteúdo</> - maior e menor abrem a tag, o conteúdo é inserido e então denovo maior e menor, mas dessa vez com uma barra dentro da tag para indicar fechamento.
+
+Tags:
+
+- Para transformar algo em um título deve-se usar a tag <h1> e </h1>. 
+
+- Para um parágrafo usa-se <p> e </p>.
+
+- Para adicionar uma imagem se usa <img src="foto.png" alt="Exemplo de foto">. A tag 'img' não possui fechamento. O 'src' e o 'alt' são parâmetros e o que está dentro das aspas é o valor.
+
+- Para adicionar uma quebra de linha basta adicionar <br>.
+
+
+Estrutura básica de um site HTML:
+
+<!DOCTYPE html> - isso vai declarar que vamos utilizar html no desenvolvimento do site.
+<html lang="pt-br"> - isso indica o idioma que será escrito no site.
+    <head>
+        <meta charset="UTF-8"> - vai nos possibilitar usar acentos e 'ç'.
+	<meta name="viewport"
+	content="width=device-width,
+	initial-scale=1.0"> - significa que o site vai ocupar 100% da parte branca do site e será			    aberto no tamanho padrão de visualização.
+	<title>Documento</title>
+    </head>
+    <body> - é o corpo do site, ou seja, onde fica o conteúdo do site
+	<h1>Olá mundo!</h1> - vai deixar a mensagem formatada como título.
+    </body>
+</html>

@@ -1,0 +1,18 @@
+Círculo cromático:
+
+O foco do estudo do círculo cromático é a harmonia de cores.
+
+- Cores análogas e uma complementar: Obtenha as cores vizinhas/análogas e trace uma linha para a cor complementar da cor escolhida.
+
+- Cores análogas relacionadas: Obtenha duas cores vizinhas, pule a terceira e pegue a próxima cor, tanto para a direita quanto para a esquerda.
+
+- Cores intercaladas: Vai sempre pulando uma e pegando a próxima cor, tanto para a esquerda quanto para a direita.
+
+- Cores triádicas: Escolha uma cor, pule três cores, pegue a quarta, pule mais três e pegue a quarta novamente.
+
+- Cores em quadrado: Escolha uma cor, pule duas, pegue a terceira, pule mais duas, pegue a terceira novamente, e repita este processo para conseguir a quarta cor da paleta.
+
+- Cores tetrádicas: Escolha uma cor, pegue o complementar desta cor. Escolha mais uma, e pegue o complementar desta cor também.
+
+- Monocromia: Obtida através de apenas uma cor, somente alterando sua saturação e brilho/luminosidade.
+

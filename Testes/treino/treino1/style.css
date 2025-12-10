@@ -1,0 +1,58 @@
+@charset " UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+:root {
+    --cor1: #04BF8A;
+    --cor2: #03A64A;
+    --cor3: #025940;
+    --cor4: #026873;
+    --cor5: #024059;
+
+    --fonte_destaque: "Oxanium", cursive;
+    --fonte_padrao: 
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: var(--cor3);
+    margin: auto;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);
+}
+
+header .linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .info {
+    display: flex;
+    gap: 10px;
+}
+
+header .email {
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header p {
+    margin: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+header .logo-menu {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.158);
+}

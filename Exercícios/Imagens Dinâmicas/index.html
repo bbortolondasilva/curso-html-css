@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <link rel="shortcut icon" href="Bfavicon.ico" type="image/x-icon">
+</head>
+<body>
+        <h1>Imagens Dinâmicas: </h1>
+
+    <br>
+
+        <h2>❗❗❗ Como fazer imagens dinâmicas ❗❗&#x2757</h2>
+
+    <p>Podemos fazer com que imagens se ajustem  automáticamente com a largura de uma tela, através das tags <strong><code>&lt;picture&gt; e &lt;source:media:type&gt;</code></strong>.</p>
+
+    <h2>Exemplo de código: </h2>
+    <pre>
+        <code>
+            <p>
+&lt;picture&gt;
+    &lt;source media="(max-width: 750px)" srcset="Imagens/img_pequena.png" type="image/png"&gt;
+
+    &lt;source media="(max-width: 1050px)" srcset="Imagens/img_media.png" type="image/png"&gt;
+
+    &lt;img src="Imagens/img_grande.png" alt="Imagem flexível"&gt;
+&lt;/picture&gt;
+            </p>
+        </code>
+    </pre>
+
+        <ul>
+            <li><strong>media="(max-width: Largura máxima de tela em pixels)"</strong></li>
+
+            <li><strong>srcset="Local/Nome do arquivo"</strong></li>
+
+            <li><strong>type="Tipo da mídia"</strong></li>
+        </ul>
+
+    <br>
+
+    <h2>Exemplo:</h2>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou, simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/img_pequena.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="Imagens/img_media.png" type="image/png">
+        <img src="Imagens/img_grande.png" alt="Imagem flexível">
+    </picture>
+</body>
+</html>

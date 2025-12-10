@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixa na prática</title>
+
+    <style>
+        h1 { /* Box level */
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        a { /* Inline level*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;    
+            
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        p#teste {
+            width: 300px;
+            height: 400px;
+
+            text-align: center;
+            text-align: justify;
+
+            margin: auto;
+
+            border: 10px black dashed;
+
+            padding: 15px;
+
+            outline: 15px blue dashed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box level</h1>
+    <p>Parágrafos também sã exemplos de box-level, mas os <a href="#">links são exemplos de caixa inline-level</a>. Vamos ver como tudo isso funciona.</p>
+
+    <p id="teste">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, sapiente ut architecto pariatur qui placeat repellendus laborum asperiores possimus atque neque incidunt rerum a quod facilis ab suscipit dolore itaque.</p>
+</body>
+</html>

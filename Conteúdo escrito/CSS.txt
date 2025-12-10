@@ -1,0 +1,28 @@
+CSS
+
+As CSS são o que estilizam o nosso site, através de seletores,declarações, propriedades e valores. 
+ex: h1{
+	font-family: Arial;
+	font-size: 20pt;
+	color: blue;
+	}
+
+h1 - é o nosso seletor.
+
+
+{} - tudo contido dentro das chaves é uma declaração.
+
+
+font-family: Arial; - toda essa linha é uma declaração, nesse caso alterando a fonte do texto.
+
+
+font-size: 20pt; - também é uma declaração, mas dessa vez para mudar o tamanho da fonte.
+
+
+color: blue; - essa diferente das outras é uma propriedade (color), e um valor (blue).
+
+
+; - toda declaração deve levar no final o símbolo de ';'.
+
+
+- style é uma tag css.

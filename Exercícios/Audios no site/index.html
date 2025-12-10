@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudios no Site</title>
+    <link rel="shortcut icon" href="Bfavicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Reproduzindo Áudios: </h1>
+
+    <p>Podemos reproduzir áudios de duas formas: </p>
+
+    <ul>
+        <li>Usando <strong><code>&lt;audio src="Happy Mistake - RKVC.mp3"&gt;&lt;/audio&gt;</code></strong>: apenas referenciamos o arquivo contendo o áudio (src), e dois parâmetros: autoplay e controls.</li>
+
+        <audio src="Happy Mistake - RKVC.mp3" autoplay controls></audio>
+
+        <li>Usando source: utiliza os mesmos parâmetros, apenas com o preload como um novo parâmetro.
+            <pre>
+                <code>
+    &lt;audio&gt;
+        &lt;source src="Happy Mistake - RKVC.mp3" type="audio/mpeg"&gt;
+    &lt;/audio&gt;
+                </code>
+            </pre>
+        </li>
+
+        <audio preload="metadata" autoplay controls>
+            <source src="Happy Mistake - RKVC.mp3" type="audio/mpeg">
+        </audio>
+    </ul>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/img_pequena.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="Imagens/img_media.png" type="image/png">
+
+        <img src="Imagens/img_grande.png" alt="Imagem grande.">
+    </picture>
+</body>
+</html>

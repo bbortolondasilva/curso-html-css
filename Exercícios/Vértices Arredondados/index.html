@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vértices Arredondados</title>
+
+    <style>
+        body {
+            background-color: #181625;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            color: white;
+        }
+
+        header {
+            background-color: rgb(12, 9, 19);
+            color: white;
+            text-align: center;
+            padding: 10px 40px;
+            margin: 10px
+        }
+
+        header > h1 {
+            font-size: 35px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(51, 50, 80);
+        }
+
+        nav { 
+            background-color: black;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(255, 255, 255, 0.384); /* Parâmetros para aplicação de sombra com o box-shadow: (Deslocamento horizontal, deslocamento vertical, blur, espalhamento e cor da sombra) */
+        } 
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(233, 177, 104);
+        }
+
+        main {
+            background-color: rgb(51, 50, 80);
+            padding: 10px;
+            margin: 10px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(12, 9, 19);
+            border-radius: 0px 20px;
+        }
+
+        main > section#conteúdo {
+            text-align: justify;
+            background-color: rgb(82, 66, 114);
+            padding: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.616);
+        }
+
+        aside {
+            text-align: right;
+            font-size: 14px;
+        }
+
+        p {
+            margin: 0px;
+        }
+
+        footer {
+            text-align: right;
+            padding: 5px 10px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header> <!-- tag de cabeçalho do site -->
+        <h1>Meu site</h1>
+
+        <nav> <!-- Tag para navegação (links, etc) -->
+            <a href="#" target="_blank">Link</a> 
+        </nav>
+    </header>
+
+    <main> <!-- Tag de conteúdo principal do site -->
+        <section id="conteúdo"> <!-- Tag de seção do conteúdo -->
+            <article> <!-- Tag de artigo (utilizar para englobar textos e demais conteúdos escritos do site) -->
+                <h2>Muita coisa</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ratione ab perspiciatis voluptatibus unde itaque voluptatem illo, distinctio exercitationem voluptates quia nobis odio velit molestias explicabo? Voluptas accusantium suscipit esse.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto voluptatibus nihil modi quibusdam labore minima ut ex cupiditate praesentium ab velit, ullam unde asperiores vero id temporibus incidunt eveniet suscipit.</p>
+                
+                <aside> <!-- Tag de anotação à parte (ex: escrito por ...) -->
+                    <p>Escrito por Regis Júnior</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer> <!-- Tag de rodapé do site -->
+        <p>Desenvolvido por BBS Software</p>
+    </footer>
+</body>
+</html>
