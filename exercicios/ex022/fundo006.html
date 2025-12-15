@@ -7,17 +7,27 @@
 
     <style>
         body {
-            height: 100vh;
+            /*height: 100vh;
             background-color: black;
             background-image: url("imagens/wallpaper002.jpg");
             background-position: center center;
-            background-repeat: repeat;
+            background-repeat: repeat-y; */
+
+            /*background-attachment: fixed; /* O background attachment aceita tanto scroll (onde o fundo é scrollado junto com o cunteúdo) quanto fixed (que o fundo não se move independente do conteúdo ser scrollado). */
+
+            /* Shothand - background
+                
+                Ordem de precedência: color > image > position 
+                    > repeat > [size] > attachment
+            */ 
+
+            background: black url("imagens/wallpaper002.jpg") center repeat-y fixed;
             background-size: cover; /* O backgrounbd size aceita os valores: auto (tamanho automático), cover (Cobre toda a viewport mesmo que precise cortar um pouco a imagem), contain (Adapta para aparecer 100% da imagem sem cortar nada), ou valores como 1000px 100% etc. */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -46,6 +56,46 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta quas quia porro, ducimus iure saepe accusantium fugiat labore recusandae amet voluptates, nemo earum dolor in. Fuga aspernatur fugiat doloremque!
         Doloremque deleniti quos dolor delectus laboriosam eveniet autem repudiandae accusantium animi, minima debitis voluptatibus repellendus! Ducimus architecto neque, quod quam iste libero, vel doloribus repellendus, fugit repellat eius quaerat consectetur.
         Id animi libero minima vel ad maxime sit eos esse velit! Commodi illo fugiat quis saepe cupiditate dicta veritatis harum quidem sed necessitatibus ratione ipsum qui architecto, ab, deserunt rem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta quas quia porro, ducimus iure saepe accusantium fugiat labore recusandae amet voluptates, nemo earum dolor in. Fuga aspernatur fugiat doloremque!
+        Doloremque deleniti quos dolor delectus laboriosam eveniet autem repudiandae accusantium animi, minima debitis voluptatibus repellendus! Ducimus architecto neque, quod quam iste libero, vel doloribus repellendus, fugit repellat eius quaerat consectetur.
+        Id animi libero minima vel ad maxime sit eos esse velit! Commodi illo fugiat quis saepe cupiditate dicta veritatis harum quidem sed necessitatibus ratione ipsum qui architecto, ab, deserunt rem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta quas quia porro, ducimus iure saepe accusantium fugiat labore recusandae amet voluptates, nemo earum dolor in. Fuga aspernatur fugiat doloremque!
+        Doloremque deleniti quos dolor delectus laboriosam eveniet autem repudiandae accusantium animi, minima debitis voluptatibus repellendus! Ducimus architecto neque, quod quam iste libero, vel doloribus repellendus, fugit repellat eius quaerat consectetur.
+        Id animi libero minima vel ad maxime sit eos esse velit! Commodi illo fugiat quis saepe cupiditate dicta veritatis harum quidem sed necessitatibus ratione ipsum qui architecto, ab, deserunt rem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta quas quia porro, ducimus iure saepe accusantium fugiat labore recusandae amet voluptates, nemo earum dolor in. Fuga aspernatur fugiat doloremque!
+        Doloremque deleniti quos dolor delectus laboriosam eveniet autem repudiandae accusantium animi, minima debitis voluptatibus repellendus! Ducimus architecto neque, quod quam iste libero, vel doloribus repellendus, fugit repellat eius quaerat consectetur.
+        Id animi libero minima vel ad maxime sit eos esse velit! Commodi illo fugiat quis saepe cupiditate dicta veritatis harum quidem sed necessitatibus ratione ipsum qui architecto, ab, deserunt rem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta quas quia porro, ducimus iure saepe accusantium fugiat labore recusandae amet voluptates, nemo earum dolor in. Fuga aspernatur fugiat doloremque!
+        Doloremque deleniti quos dolor delectus laboriosam eveniet autem repudiandae accusantium animi, minima debitis voluptatibus repellendus! Ducimus architecto neque, quod quam iste libero, vel doloribus repellendus, fugit repellat eius quaerat consectetur.
+        Id animi libero minima vel ad maxime sit eos esse velit! Commodi illo fugiat quis saepe cupiditate dicta veritatis harum quidem sed necessitatibus ratione ipsum qui architecto, ab, deserunt rem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta quas quia porro, ducimus iure saepe accusantium fugiat labore recusandae amet voluptates, nemo earum dolor in. Fuga aspernatur fugiat doloremque!
+        Doloremque deleniti quos dolor delectus laboriosam eveniet autem repudiandae accusantium animi, minima debitis voluptatibus repellendus! Ducimus architecto neque, quod quam iste libero, vel doloribus repellendus, fugit repellat eius quaerat consectetur.
+        Id animi libero minima vel ad maxime sit eos esse velit! Commodi illo fugiat quis saepe cupiditate dicta veritatis harum quidem sed necessitatibus ratione ipsum qui architecto, ab, deserunt rem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta quas quia porro, ducimus iure saepe accusantium fugiat labore recusandae amet voluptates, nemo earum dolor in. Fuga aspernatur fugiat doloremque!
+        Doloremque deleniti quos dolor delectus laboriosam eveniet autem repudiandae accusantium animi, minima debitis voluptatibus repellendus! Ducimus architecto neque, quod quam iste libero, vel doloribus repellendus, fugit repellat eius quaerat consectetur.
+        Id animi libero minima vel ad maxime sit eos esse velit! Commodi illo fugiat quis saepe cupiditate dicta veritatis harum quidem sed necessitatibus ratione ipsum qui architecto, ab, deserunt rem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta quas quia porro, ducimus iure saepe accusantium fugiat labore recusandae amet voluptates, nemo earum dolor in. Fuga aspernatur fugiat doloremque!
+        Doloremque deleniti quos dolor delectus laboriosam eveniet autem repudiandae accusantium animi, minima debitis voluptatibus repellendus! Ducimus architecto neque, quod quam iste libero, vel doloribus repellendus, fugit repellat eius quaerat consectetur.
+        Id animi libero minima vel ad maxime sit eos esse velit! Commodi illo fugiat quis saepe cupiditate dicta veritatis harum quidem sed necessitatibus ratione ipsum qui architecto, ab, deserunt rem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta quas quia porro, ducimus iure saepe accusantium fugiat labore recusandae amet voluptates, nemo earum dolor in. Fuga aspernatur fugiat doloremque!
+        Doloremque deleniti quos dolor delectus laboriosam eveniet autem repudiandae accusantium animi, minima debitis voluptatibus repellendus! Ducimus architecto neque, quod quam iste libero, vel doloribus repellendus, fugit repellat eius quaerat consectetur.
+        Id animi libero minima vel ad maxime sit eos esse velit! Commodi illo fugiat quis saepe cupiditate dicta veritatis harum quidem sed necessitatibus ratione ipsum qui architecto, ab, deserunt rem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta quas quia porro, ducimus iure saepe accusantium fugiat labore recusandae amet voluptates, nemo earum dolor in. Fuga aspernatur fugiat doloremque!
+        Doloremque deleniti quos dolor delectus laboriosam eveniet autem repudiandae accusantium animi, minima debitis voluptatibus repellendus! Ducimus architecto neque, quod quam iste libero, vel doloribus repellendus, fugit repellat eius quaerat consectetur.
+        Id animi libero minima vel ad maxime sit eos esse velit! Commodi illo fugiat quis saepe cupiditate dicta veritatis harum quidem sed necessitatibus ratione ipsum qui architecto, ab, deserunt rem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta quas quia porro, ducimus iure saepe accusantium fugiat labore recusandae amet voluptates, nemo earum dolor in. Fuga aspernatur fugiat doloremque!
+        Doloremque deleniti quos dolor delectus laboriosam eveniet autem repudiandae accusantium animi, minima debitis voluptatibus repellendus! Ducimus architecto neque, quod quam iste libero, vel doloribus repellendus, fugit repellat eius quaerat consectetur.
+        Id animi libero minima vel ad maxime sit eos esse velit! Commodi illo fugiat quis saepe cupiditate dicta veritatis harum quidem sed necessitatibus ratione ipsum qui architecto, ab, deserunt rem?</p>
+
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta quas quia porro, ducimus iure saepe accusantium fugiat labore recusandae amet voluptates, nemo earum dolor in. Fuga aspernatur fugiat doloremque!
         Doloremque deleniti quos dolor delectus laboriosam eveniet autem repudiandae accusantium animi, minima debitis voluptatibus repellendus! Ducimus architecto neque, quod quam iste libero, vel doloribus repellendus, fugit repellat eius quaerat consectetur.
         Id animi libero minima vel ad maxime sit eos esse velit! Commodi illo fugiat quis saepe cupiditate dicta veritatis harum quidem sed necessitatibus ratione ipsum qui architecto, ab, deserunt rem?</p>
