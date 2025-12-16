@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+
+    <style>
+        #container {
+            position: relative; /* Posição relativa permite que a div se mova conforme o tamanho da tela muda */
+            height: 96vh;
+            background-color: purple;
+            padding: 10px;
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+        }
+
+        #conteudo {
+            position: absolute; /* Posição absoluta fixa a div naquela posição independente do tamanho da tela mudar */
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%; /* Imagem de fundo ocupa 100% do tamanho da div */ 
+            
+            left: 50%; /* Por conta da posição ser absoluta precisamos declará-la, portanto mova 50% (do tamanho da div que contém essa outra div) para a direita, ou seja metade horizontalmente */
+            top: 50%; /* E mova 50% para baixo, ou seja, metade verticalmente */
+
+            transform: translate(-50%, -50%); /* Por fim, muda o ponto inicial horizontal da div para -50%, metade para esquerda, e -50% novamente, mas verticalmente, metade para cima */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+            
+        </article>
+    </section>
+</body>
+</html>
