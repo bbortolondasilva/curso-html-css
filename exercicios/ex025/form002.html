@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="Nome do Usuário"> <!-- O min e o max lenght determinam o tamanho máximoe mínimo do que pode ser digitado no campo -->
+
+            <!-- 
+                - O size determina o tamanho do campo 
+
+                - O placeholder é como o hint-text do flet, que indica o que deve ser digitado pelo usuário, mas dentro do campo.
+
+                - O auto-complete pode ser ligado ou desligado, serve para mostrar sugestões de valores já digitados. Em cada campo é preciso declarar a função de cada campo (usuário, senha).
+            -->
+
+        </p>
+
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="15" placeholder="Mínimo 8 letras"> <!-- Required mostra que o campo é obrigatório e não deixa que os dados sejam enviados -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar"> <!-- Value é o nome do botão e o texto que aparecerá nele, o tipo submit é para enviar informações -->
+            <input type="reset" value="Limpar"> <!-- O tipo reset limpa todos os campos -->
+        </p>
+    </form>
+</body>
+</html>
