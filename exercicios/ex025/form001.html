@@ -14,13 +14,20 @@
 <body>
     <h1>Meu primeiro formulário</h1>
 
-    <form autocomplete="off">
-        <p>Nome: 
-            <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: 
-            <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form autocomplete="off" action="cadastro.php"> <!-- O action é o que vai determinar o que acontecerá após algum comando ser dado na página -->
         <p>
-            <input type="submit" value="Enviar"></p>
+            <label for="inome">Nome:</label> <!-- O label faz o link entre o controle e a "descrição" ou "ação" do campo ou botão, o parâmetro "for" deve apontar para o id do controle -->
+            <input type="text" name="nome" id="inome"> <!-- "name" e "id" servem para o php e html (name) e para o javascript (id) -->
+        </p> 
+
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
     </form>
 </body>
 </html>
