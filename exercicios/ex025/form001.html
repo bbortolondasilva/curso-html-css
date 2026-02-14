@@ -14,7 +14,9 @@
 <body>
     <h1>Meu primeiro formulário</h1>
 
-    <form autocomplete="off" action="cadastro.php"> <!-- O action é o que vai determinar o que acontecerá após algum comando ser dado na página -->
+    <!-- Utilizar o método "get" para dados que não são sensíveis (nome, sobrenbome), com o "get" só é possível enviar dados de até 3000 bytes -->
+     <!-- O "post" é para dados maiores e mais sensíveis, além de arquivos e dados acima de 3000 bytes -->
+    <form method="post" autocomplete="off" action="cadastro.php"> <!-- O action é o que vai determinar o que acontecerá após algum comando ser dado na página -->
         <p>
             <label for="inome">Nome:</label> <!-- O label faz o link entre o controle e a "descrição" ou "ação" do campo ou botão, o parâmetro "for" deve apontar para o id do controle -->
             <input type="text" name="nome" id="inome"> <!-- "name" e "id" servem para o php e html (name) e para o javascript (id) -->
