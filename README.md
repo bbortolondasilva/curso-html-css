@@ -19,7 +19,5 @@ Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
 
 <h2>Módulo 3</h2>
 <ul>
-    <li><abbr title="Link M1-D1"><a href="https://bbortolondasilva.github.io/curso-html-css/desafios/desafios-modulo1/Links%20Sociais/index.html">Desafio 1</a></abbr></li>
-    <li><abbr title="Link M1-D2"><a href="https://bbortolondasilva.github.io/curso-html-css/desafios/desafios-modulo1/Listas%20de%20Definição/index.html">Desafio 2</a></abbr></li>
-    <li><abbr title="Link M1-D3"><a href="https://bbortolondasilva.github.io/curso-html-css/desafios/desafios-modulo1/Site%20com%20vídeos/index.html">Desafio 3</a></abbr></li>
+    <li><abbr title="Link M1-D1"><a href="https://github.com/bbortolondasilva/curso-html-css/tree/main/desafios/desafio-modulo3/index.html">Desafio 1</a></abbr></li>
 </ul>
