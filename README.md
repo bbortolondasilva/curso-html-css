@@ -24,10 +24,10 @@ Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
 
 <h2>Módulo 4</h2>
 <ul>
-    <li><abbr title="Link M4-D1"><a target="blank">Desafio 1</a></abbr></li>
+    <li><abbr title="Link M4-D1"><a href="#" target="blank">404</a></abbr></li>
 </ul>
 
 <h2>Módulo 5</h2>
 <ul>
-    <li><abbr title="Link M5-D1"><a target="blank">Desafio 1</a></abbr></li>
+    <li><abbr title="Link M5-D1"><a href="#" target="blank">404</a></abbr></li>
 </ul>
