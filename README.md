@@ -19,5 +19,5 @@ Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
 
 <h2>Módulo 3</h2>
 <ul>
-    <li><abbr title="Link M1-D1"><a href="https://github.com/bbortolondasilva/curso-html-css/tree/main/desafios/desafio-modulo3/index.html">Desafio 1</a></abbr></li>
+    <li><abbr title="Link M3-D1"><a href="https://github.com/bbortolondasilva/curso-html-css/tree/main/desafios/desafio-modulo3/index.html">Desafio 1</a></abbr></li>
 </ul>
