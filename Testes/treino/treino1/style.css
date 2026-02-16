@@ -1,58 +1,52 @@
-@charset " UTF-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
-
-:root {
-    --cor1: #04BF8A;
-    --cor2: #03A64A;
-    --cor3: #025940;
-    --cor4: #026873;
-    --cor5: #024059;
-
-    --fonte_destaque: "Oxanium", cursive;
-    --fonte_padrao: 
-}
+@charset "UTF-8";
 
 body {
-    margin: 0px;
-}
-
-header {
-    background-color: var(--cor3);
-    margin: auto;
-    padding: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);
-}
-
-header .linha {
+    background-color: antiquewhite;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-header .info {
-    display: flex;
-    gap: 10px;
-}
-
-header .email {
-    font-size: 0.8em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-header p {
+    justify-content: center;
+    min-height: 98vh;
     margin: 0px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
-    padding: 10px;
 }
 
-header .logo-menu {
+main {
     background-color: white;
-    padding: 10px;
+    min-width: 300px;
+    min-height: 10vh;
     border-radius: 10px;
+}
+
+h1 {
+    background-color: rgb(37, 70, 255);
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+div#login {
     display: flex;
     justify-content: center;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.158);
+    align-items: center;
+    min-height: 8vh;
+    padding: 5px;
+}
+
+form {
+    
+}
+
+div#user {
+    display: block;
+    padding-bottom: 10px;
+}
+
+div#senha {
+    padding-bottom: 15px;
+}
+
+div#enviar {
+    text-align: center;
 }

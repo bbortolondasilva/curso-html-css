@@ -3,36 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treino 1</title>
+    <title>Teste</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo-menu">
-            <picture>
-                <img src="content/logo-softcontrol.jpg" alt="Logo SoftControl Brasil">
-            </picture>
-        </div>
-
-        <div class="linha">
-            <div class="info">
-                <p>📍 Vacaria / RS</p>
-                <p>📞 (54) 3232-6956</p>
-            </div>
-
-            <p class="email">✉️ atendimento@softcontrolbrasil.com.br</p>
-        </div>
-    </header>
-
     <main>
-        <article>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque unde, vel officiis amet optio eum harum facilis nulla voluptates esse deleniti omnis illo magni quidem. Suscipit dicta corporis sapiente quos.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, omnis! Rem dolore maiores tempore deserunt consequatur reprehenderit provident ipsa obcaecati doloribus illum? Vel eos pariatur non dolore atque est nisi.
-            </p>
-        </article>
+        <h1>Login</h1>
+
+        <div id="login">
+            <form action="teste.py">
+                <div id="user">
+                    <input type="text" name="usuario" id="iusuario" placeholder="Nome de usuário" required minlength="4" maxlength="20">
+                </div>
+
+                <div id="senha">
+                    <input type="password" name="senha" id="isenha" required placeholder="Senha" minlength="8" maxlength="20">
+                </div>
+
+                <div id="enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+
     </main>
 </body>
 </html>
