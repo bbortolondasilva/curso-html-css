@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend style="text-align: center;">Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required placeholder="Nome Completo">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(XX)XXXXX-XXXX">
+            
+                <!-- EXEMPLO DE REGEX
+                    - "^": Início do RegEx.
+                    - "\d": Simboliza que apenas dígitos/números serão aceitos.
+                    - "{n}": O número que estiver dentro das chaves é quantos dígitos serão aceitos.
+                    - "() -": Os parênteses e o traço são os símbolos de separação do ddd e dos números do telefone, mas poderiam ser outros símbolos.
+                    - "$": Sinaliza o fim da RegEx.
+                -->
+            </p>
+        </fieldset>
+
+        <!-- Estudar mais sobre RegEx -->
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
