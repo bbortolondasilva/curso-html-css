@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#00ff00"> <!-- O input color gera um seletor de cores -->
+        </p>
+
+        <p>
+            <label for="inivel">Nível de satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2"> <!-- O input do tipo range pode ter seus limites alterados através de min e max -->
+        </p>
+
+        <p>
+            <label for="ifoto">Foto do perfil:</label>
+            <input type="file" name="" id=""> 
+            <!-- Gera um seletor de arquivos
+
+                - IMPORTANTE -
+                
+                - Se for utilizar esse input, é preciso utilizar o método post, para que não dê erros. 
+
+                Também existe o input image, mas esse não deixa escolher o arquivo/foto, ela já é previamente selecionada por quem fez o site e não pode ser mudada.
+            -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
