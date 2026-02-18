@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <p>
+        <label for="iest">Estado:</label>
+        <select name="estado" id="iest"> 
+            <!-- Cria uma lista de seleção que expande ao ser clicada
+
+                - Para que funcione precisam ser declaradas as opções com "option", passado um valor no "value" e dentre o <option> e o </option> escrito o texto que você quer que seja a opção.
+            -->
+            
+            <option value="" selected>--- Escolha ---</option>
+
+            <optgroup label="Região Sudeste">
+                <option value="SP">São Paulo</option> <!-- O value aqui é o código que será enviado caso a opção seja selecionada -->
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+
+            <optgroup label="Região Sul">
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+            </optgroup>
+
+        </select>
+    </p>
+
+    <p>
+        <label for="iprof">Profissão:</label>
+        <input type="text" name="prof" id="iprof" list="lstprof"> 
+        <!-- 
+            Aqui neste input text, ele segue sendo o campo de texto padrão, porém agora ele possui o ATRIBUTO "list", o que faz com que ele ganhe uma nova funcionalidade parecida com o "select", listando opções, mas com a vantagem do input text padrão de escrever opções que não estão dentro da lista.
+        -->
+
+        <datalist id="lstprof"> <!-- Aqui declaramos uma datalist ao invés do select, adicionamos um id, e passamos ele para o atributo list no input text -->
+            <option value="">Administrador</option>
+            <option value="">Contabilista</option>
+            <option value="">Professor</option>
+            <option value="">Desenvolvedor</option>
+        </datalist>
+    </p>
+
+    <p> 
+        <label for="imsg">Mensagem:</label>
+        <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua Mensagem Aqui"></textarea>
+        <!--
+            Cria uma ÁREA de texto ao invés de apenas um campo. Precisa ser declarado quantas colunas (letras) e linhas vão aparecer na tela, basicamente o tamanho da caixa de texto.
+
+            - É interessante utilizaar o método post caso use este controle pois possui um limite de trasnmissão maior que 3000 bytes.
+        -->
+    </p>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
