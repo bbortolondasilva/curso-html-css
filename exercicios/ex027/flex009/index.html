@@ -14,54 +14,59 @@
 
             display: flex;
             flex-flow: row wrap;
-            align-items: flex-start;
+            align-content: flex-start;
         }
 
         .item {
             text-align: center;
             border: 1px solid black;
             background-color: lightblue;
-            padding: 40px;
+
+            flex-basis: 150px;
+            /* Flex-Basis
+            - Auto: aumenta conforme o tamanho do conteúdo do item;
+            - Tamanho definido: Deste modo, os itens são criados com tamanhos fixos. Exemplo: flex-basis: 200px == Todos os items da classe "item" vão ter 200px de width. Caso o container pai diminua, todos os items diminuem igualmente, até o limite do tamanho do conteúdo que possuem. (Dependendo o que estivenr dentro do container filho, ele pode quebrar os elementos como se fosse um flex-wrap [Textos com espaços, divs separadas, etc]).
+             */
         }
 
-        #i1 {
-            align-self: auto;
+        /* #i1 {
+            
         }
 
         #i2 {
-            align-self: flex-end;
+            
         }
 
         #i3 {
-            align-self: center;
+            
         }
 
         #i4 {
-            align-self: auto;
+            
         }
 
         #i5 {
-            align-self: auto;
+            
         }
 
         #i6 {
-            align-self: center;
+            
         }
 
         #i7 {
-            align-self: stretch;
-        }
+
+        } */
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item" id="i1">A</div>
-        <div class="item" id="i2">B</div>
+        <div class="item" id="i1">AAAAAA</div>
+        <div class="item" id="i2">BBB</div>
         <div class="item" id="i3">C</div>
-        <div class="item" id="i4">D</div>
-        <div class="item" id="i5">E</div>
+        <div class="item" id="i4">DDDDDDDDDDD</div>
+        <div class="item" id="i5">EE</div>
         <div class="item" id="i6">F</div>
-        <div class="item" id="i7">G</div>
+        <div class="item" id="i7">GGGGG</div>
     </div>
 </body>
 </html>
