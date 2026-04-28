@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+
+    <style>
+        .conteiner {
+            background-color: lightsalmon;
+            padding: 20px;
+
+            display: flex;
+            flex-flow: row nowrap;
+            align-content: flex-start;
+        }
+
+        .item {
+            text-align: center;
+            border: 1px solid black;
+            background-color: lightblue;
+
+            flex-basis: 150px;
+            /* Flex-Basis
+            - Auto: aumenta conforme o tamanho do conteúdo do item;
+            - Tamanho definido: Deste modo, os itens são criados com tamanhos fixos. Exemplo: flex-basis: 200px == Todos os items da classe "item" vão ter 200px de width. Caso o container pai diminua, todos os items diminuem igualmente, até o limite do tamanho do conteúdo que possuem. (Dependendo o que estivenr dentro do container filho, ele pode quebrar os elementos como se fosse um flex-wrap [Textos com espaços, divs separadas, etc]).
+             */ 
+
+            flex-shrink: 1; /* Ativa ou destiva a diminuição dos itens (no main axis) de forma automática. 
+            
+            Valor padrão: 1 
+            
+            Caso o flex-wrap e o flex-basis estejam ativados, ele diminui o tamanho dos itens até o limite definido no flex-basis, e então quando ficam menores que isso ele quebra a linha. */
+
+            flex-grow: 1; /* Ativa ou destiva o aumento dos itens (no main axis) de forma automática. 
+            
+            Valor padrão: 0 
+            
+            Caso o flex-wrap esteja ativado, ele aumenta todos os elementos para preencherem todo o espaço possível, mesmo após a quebra de linha. */
+        }
+
+        div#i1 {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        div#i2 {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#i3 {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+    </div>
+</body>
+</html>
