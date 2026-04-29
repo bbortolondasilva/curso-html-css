@@ -19,39 +19,32 @@
             text-align: center;
             border: 1px solid black;
             background-color: lightblue;
-
-            flex-basis: 150px;
-            /* Flex-Basis
-            - Auto: aumenta conforme o tamanho do conteúdo do item;
-            - Tamanho definido: Deste modo, os itens são criados com tamanhos fixos. Exemplo: flex-basis: 200px == Todos os items da classe "item" vão ter 200px de width. Caso o container pai diminua, todos os items diminuem igualmente, até o limite do tamanho do conteúdo que possuem. (Dependendo o que estivenr dentro do container filho, ele pode quebrar os elementos como se fosse um flex-wrap [Textos com espaços, divs separadas, etc]).
-             */ 
-
-            flex-shrink: 1; /* Ativa ou destiva a diminuição dos itens (no main axis) de forma automática. 
-            
-            Valor padrão: 1 
-            
-            Caso o flex-wrap e o flex-basis estejam ativados, ele diminui o tamanho dos itens até o limite definido no flex-basis, e então quando ficam menores que isso ele quebra a linha. */
-
-            flex-grow: 1; /* Ativa ou destiva o aumento dos itens (no main axis) de forma automática. 
-            
-            Valor padrão: 0 
-            
-            Caso o flex-wrap esteja ativado, ele aumenta todos os elementos para preencherem todo o espaço possível, mesmo após a quebra de linha. */
         }
 
         div#i1 {
-            flex-shrink: 1;
-            flex-grow: 0;
+            flex: 1 1 200px;
+            /* ShortHand Flex Grow - Shrink - Basis: flex
+            - Ao utilizar flex é possível alterar as propriedades de flex grow, shrink e basis sem ter que declará-las separadamente.
+            
+            - Ordem de utilização: flex: (GROW) (SHRINK) (BASIS) 
+            
+            === Exemplos de utilização ===
+            
+            - flex: 0 1 auto /(ou) flex: initial == Configuração padrão;
+            
+            - flex: 0 0 auto /(ou) flex: none == Deixar os elementos não flexíveis, dependendo apenas do tamanho do conteúdo;
+
+            - flex: 1 1 auto /(ou) flex: auto == Deixar os elementos totalmente flexíveis, podendo aumentar e diminuir limitando-se ao tamanho do conteúdo;
+            
+            flex: (valor grow apenas) /(ou) flex: (valor grow) 1 auto == Apenas o grow é definido, os outros atributos recebem o valor padrão.*/
         }
 
         div#i2 {
-            flex-shrink: 1;
-            flex-grow: 1;
+            flex: 1 1 200px;
         }
 
         div#i3 {
-            flex-shrink: 1;
-            flex-grow: 0;
+            flex: 1 1 200px;
         }
     </style>
 </head>
