@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 01</title>
+
+    <style>
+        .container {
+            border: 3px solid blue;
+            height: 250px;
+            
+            display: grid;
+            grid-template-columns: auto auto auto; /* define o tamanho e quantidade de colunas dentro do container (auto -> tamanho das colunas, 3 vezes o "auto" é a quantidade de colunas, 3 neste caso. */
+            grid-template-rows: auto auto auto; /* define o tamanho e quantidade de linhas dentro do container (auto -> tamanho das linhas, 3 vezes o "auto" é a quantidade de linhas, 3 neste caso. */
+            gap: 5px; /* Espaçamento entre as linhas e as colunas, quase como um margin */
+        }   
+
+        .item {
+            border: 3px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
