@@ -8,17 +8,28 @@
     <style>
         .container {
             border: 3px solid blue;
-            height: 250px;
             
             display: grid;
-            grid-template-columns: auto auto auto; /* define o tamanho e quantidade de colunas dentro do container (auto -> tamanho das colunas, 3 vezes o "auto" é a quantidade de colunas, 3 neste caso. */
-            grid-template-rows: auto auto auto; /* define o tamanho e quantidade de linhas dentro do container (auto -> tamanho das linhas, 3 vezes o "auto" é a quantidade de linhas, 3 neste caso. */
+            grid-template: repeat(3, 1fr) / repeat(3, 1fr); 
+            /* grid-template: repeat(3, 1fr) / repeat(3, 1fr):
+
+            - "1fr": 1 Fração do grid explícito. Basicamente, são 3 linhas de 1fr cada, então a altura total do container é dividida em 3 e distribuída entre os itens. O mesmo para as colunas, porém com a largura.
+
+            - Substitui a declaração do grid-template-rows/columns, como um shorthand. Primeiro parâmetro: Nº linhas (rows); Segundo parâmetro: Nº Colunas.
+
+            - repeat(3, 100px): Função que simplifica a declaração do número de linhas e colunas. 1º Parâmtro: Nº linhas/colunas; 2º Parâmetro: Tamanho das linhas/colunas. */
+
+            grid-auto-flow: row; /* Quando novas linhas forem criadas, dependendo da configuração passada ele irá fazer a quebra da linha de forma diferente, quase como um "wrap". Row: Quebra a linha e posiciona o elemento seguindo o fludo de um row, um à direita do outro e quando acaba o espaço, vai para baixo. Column: Psiciona os elementos um abaixo do outro, e quando acaba o espaço joga ele para a direita. */
+
+            grid-auto-rows: 80px; /* Quando novas linhas forem criadas, elas terão automaticamente 80px. */
+
+            /* grid-auto-columns: 120px; */
+
             gap: 10px; /* Espaçamento entre as linhas e as colunas, quase como um margin */
 
-            align-items: normal; /* Align no grid é sempre alinhamento vertical */
-            justify-items: normal; /* justify no grid é sempre alinhamento horizontal */
-            align-content: normal;
-            justify-content: normal;
+            place-items: normal normal; /* Shorthand para o align/justify-items. 1º Parâmetro: Align; 2º Parâmetro: Justify. */
+
+            place-content: normal normal; /* Shorthand para o align/justify-content. 1º Parâmetro: Align; 2º Parâmetro: Justify. */
         }   
 
         .item {
@@ -36,6 +47,9 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
 </body>
 </html>
