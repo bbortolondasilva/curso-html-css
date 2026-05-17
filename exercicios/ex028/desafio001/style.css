@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.container {
+    border: 2px solid black;
+    display: grid;
+
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}  
+
+.caixa1 {
+    background-color: red;
+
+    /* Span: por quantas linhas ou colunas este item irá se expandir. Ao invés de ter que dizer qual linha ou coluna você quer que o a expansão do item termine, você coloca quantas quer que ele ocupe. Neste caso, ao invés de dizer que ele temina na linha 2, dizemos que ele se expandirá para que ocupe uma linha inteira. */
+
+    grid-area: 1 / 1 / span 1 / span 4;
+
+    /* grid-area: shorthand para todas as configurações de grid do item. ordem de parâmetros: row start, column start, row end, column end. */
+}
+
+.caixa2 {
+    background-color: yellow;
+
+    grid-area: 2 / 1 / span 2 / span 2;
+}
+
+.caixa3 {
+    background-color: blue;
+
+    grid-area: 2 / 3 / span 2 / span 2;
+}
